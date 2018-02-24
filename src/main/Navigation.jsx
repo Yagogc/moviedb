@@ -1,13 +1,19 @@
 import React from "react";
-
+import styled from "styled-components"
 class Navigation extends React.Component {
 	render() {
 		return (
-		<section>
+		<Section>
 			Navigation
-		</section>
+		</Section>
 		)
 	}
 }
 
 export default Navigation;
+
+
+const Section = styled.section`
+background: tomato;
+min-width: 300px
+`

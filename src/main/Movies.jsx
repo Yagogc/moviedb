@@ -1,7 +1,7 @@
 
 import React from "react";
 import MovieListItem from "./MovieListItem";
-
+import styled from "styled-components"
 
 const tmdb = 'c857fa67fba523ad3ce66df18e7ab279';
 const movies = ["Breaking bad", "Narcos", "Game of Thrones"];
@@ -48,7 +48,7 @@ class Movies extends React.Component {
 	
 	render() {
 		return (
-		<section>
+		<Section>
 			<ul>
 			{
 			this.state.movies.map( movie => (
@@ -56,9 +56,20 @@ class Movies extends React.Component {
 				))
 			}
 			</ul>
-		</section>
+		</Section>
 		)
 	}
 }
 
 export default Movies;
+
+const Section = styled.section`
+ul {
+	flex-basis: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	
+	padding: 20px 0;
+	margin: 0;
+}
+`
