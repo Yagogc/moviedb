@@ -5,7 +5,7 @@ const MovieListItem = ({ movie }) => {
 	const imgUrl = `https://image.tmdb.org/t/p/w342/${poster_path}`;
 
 	return (
-		<li className="movie-item">
+		<li>
 			<img src={imgUrl} alt=""/>
 			<span>{title}</span>
 		</li>

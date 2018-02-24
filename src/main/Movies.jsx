@@ -49,7 +49,7 @@ class Movies extends React.Component {
 	render() {
 		return (
 		<section>
-			<ul className="movies">
+			<ul>
 			{
 			this.state.movies.map( movie => (
 				<MovieListItem key={movie.id} movie={movie} />
